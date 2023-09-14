@@ -8,8 +8,7 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
-            text-align: center;
+            background-image: linear-gradient(100deg, #def880 0, #caf67f 12.5%, #b2f07c 25%, #93e675 37.5%, #6cd86c 50%, #38ca65 62.5%, #00bf64 75%, #00b869 87.5%, #00b472 100%);              text-align: center;
             color: white;
         }
         .box{
@@ -24,12 +23,12 @@
         a{
             text-decoration: none;
             color: white;
-            border: 3px solid dodgerblue;
+            border: 3px solid green;
             border-radius: 10px;
             padding: 10px;
         }
         a:hover{
-            background-color: dodgerblue;
+            background-color: greenyellow;
         }
     </style>
 </head>

@@ -8,8 +8,7 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
-        }
+            background-image: linear-gradient(100deg, #def880 0, #caf67f 12.5%, #b2f07c 25%, #93e675 37.5%, #6cd86c 50%, #38ca65 62.5%, #00bf64 75%, #00b869 87.5%, #00b472 100%);        }
         .imputLogin{
             background-color: rgba(0, 0, 0, 0.6);
             position: absolute;
@@ -27,17 +26,17 @@
             font-size: 15px;
         }
         .inputSubmit{
-            background-color: dodgerblue;
+            background-color: greenyellow;
             border: none;
             padding: 15px;
             width: 100%;
             border-radius: 10px;
-            color: white;
+            color: black;
             font-size: 15px;
             
         }
         .inputSubmit:hover{
-            background-color: deepskyblue;
+            background-color: green;
             cursor: pointer;
         }
     </style>
