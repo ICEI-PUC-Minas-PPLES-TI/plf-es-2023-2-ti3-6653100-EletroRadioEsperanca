@@ -43,7 +43,6 @@
 </head>
 <body>
 <div class="">
-    <a href="loginAdm.php">Login Administração</a>
 </div>
     <a href="home.php">Voltar</a>
     <div class="imputLogin">

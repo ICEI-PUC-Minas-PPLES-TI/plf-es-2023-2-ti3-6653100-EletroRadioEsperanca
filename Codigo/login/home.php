@@ -12,10 +12,28 @@
             color: white;
         }
         .box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
+        }
+        .box1{ 
+            width: 100%;
+            height: 100px;
+            padding-left: 50px;
+            box-sizing: border-box;         
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .box2{  
+            width: 100%;
+            height: 100px;
+            padding-left: 50px;
+            box-sizing: border-box;    
             background-color: rgba(0, 0, 0, 0.6);
             padding: 30px;
             border-radius: 10px;
@@ -32,10 +50,16 @@
         }
     </style>
 </head>
-<body>   
-    <div class="box">
-        <a href="login.php">Login</a>
-        <a href="formulario.php">Cadastre-se</a>
+<body> 
+<div class="box">
+    <div class="box1">
+        <a href="login.php">Login Cliente</a>
+        <a href="formulario.php">Cadastro Cliente</a>
+    </div>
+    <div class="box2">
+        <a href="loginFuncionario.php">Login Funcionário</a>
+        <a href="loginAdm.php">Login ADM</a>
+    </div>
     </div>
 </body>
 </html>

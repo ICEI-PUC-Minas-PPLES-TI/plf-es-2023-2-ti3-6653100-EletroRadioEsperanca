@@ -121,7 +121,6 @@
 </head>
 <body>
 <div class="">
-        <a href="formularioAdm.php">Cadastro Administração</a>
 </div>
     <a href="home.php">Voltar</a>
     <div class="box">

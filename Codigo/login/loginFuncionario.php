@@ -47,8 +47,8 @@
 </div>
     <a href="home.php">Voltar</a>
     <div class="imputLogin">
-        <h1>Login ADM</h1>
-        <form action="testLoginAdm.php" method="POST">
+        <h1>Login Funcionário</h1>
+        <form action="testLoginFuncionario.php" method="POST">
             <input type="text" name="email" placeholder="Email">
             <br><br>
             <input type="password" name="senha" placeholder="Senha">
