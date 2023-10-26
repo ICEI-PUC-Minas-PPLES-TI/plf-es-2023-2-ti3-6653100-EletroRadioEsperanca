@@ -116,31 +116,96 @@ if (isset($_POST['buscar'])) {
 <body>
 
     <div class="background2">
-        <header>
-            <a href="index.php">
+    <header>
+            <style>
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+                }
+
+                .logo-container {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .logo {
+                    margin-right: 20px;
+                    /* Espaçamento entre a borda e o logotipo */
+                    max-width: 100px;
+                    /* Defina o máximo de largura para o logotipo */
+                }
+
+                .cabeçalho-links {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .cabeçalho-links li {
+                    list-style-type: none;
+                    margin-right: 20px;
+                }
+
+                .cabeçalho-links li a {
+                    text-decoration: none;
+                    color: black;
+                    /* Definindo a cor do texto como preto */
+                }
+
+                .icon {
+                    padding-left: 20px;
+                }
+
+                .search {
+                    padding-left: 20px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                @media (max-width: 768px) {
+                    header {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
+                    .logo-container {
+                        margin-bottom: 10px;
+                    }
+
+                    .cabeçalho-links,
+                    .icon,
+                    .search {
+                        margin-top: 10px;
+                        padding-left: 0;
+                    }
+
+                    .logo {
+                        margin-right: 0;
+                    }
+                }
+            </style>
+
+            <a href="index.php" class="logo-container">
                 <div class="logo">
-                    <img src="assets/img/Eletro Radio - logo menor.jpg" />
+                    <img src="assets/img/Eletro Radio - logo menor.jpg" style="max-width: 100%;" />
                 </div><!--logo-->
             </a>
 
-            <div class="cabeçalho-link">
+            <ul class="cabeçalho-links">
+                <li><a href="televisoes.php">Televisões</a></li>
+                <li><a href="celulares.php">Celulares</a></li>
+                <li><a href="eletrodomesticos.php">Eletrodomésticos</a></li>
+                <li><a href="moveis.php">Móveis</a></li>
+                <li><a href="login/login.php">Login</a></li>
                 <li>
-                    <a href="televisoes.php">Televisões</a>
+                    <a href="carrinho.php">
+                        <i class="fas fa-shopping-cart"></i> Carrinho
+                    </a>
                 </li>
-                <li>
-                    <a href="celulares.php">Celulares</a>
-                </li>
-                <li>
-                    <a href="eletrodomesticos.php">Eletrodomésticos</a>
-                </li>
-                <li>
-                    <a href="moveis.php">Móveis</a>
-                </li>
-                <li>
-                    <a href="login/login.php">Login</a>
-                </li>
-            </div><!--cabeçalho-link-->
-            <div class="icon"><span><ion-icon name="bag-outline"></ion-icon></span></div><!--icon-->
+            </ul><!--cabeçalho-links-->
+
+            <div class="icon"><ion-icon name="bag-outline"></ion-icon></div><!--icon-->
             <div class="search">
                 <i class="fas fa-search"></i> <!-- Ícone de lupa -->
                 <form action="" method="post">
@@ -149,6 +214,7 @@ if (isset($_POST['buscar'])) {
                 </form>
             </div>
         </header>
+
 
 
     </div><!--background-->
