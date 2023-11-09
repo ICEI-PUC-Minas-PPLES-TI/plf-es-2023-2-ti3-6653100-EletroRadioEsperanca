@@ -1,0 +1,51 @@
+body {
+  font-family: system-ui;}
+.header {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.box {
+  border: 1px solid lightgray;
+  width: 80%; /* Reduz a largura da caixa para 80% da largura da página */
+  margin: auto; /* Centraliza a caixa na página */
+  margin-bottom: 20px;
+}
+.section {
+  padding: 10px; /* Reduz o preenchimento dentro de cada seção */
+}
+.center-text {
+ text-align: center;
+}
+.right-align {
+ text-align: right;
+}
+.green {
+ color: rgb(68, 128, 0);
+}
+.bold {
+  font-weight: bold;
+}
+hr {
+ border-top: 1px solid lightgray;
+}
+.buttons {
+  width: 80%;
+  margin: auto; /* Centraliza os botões na página */
+}
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block; /* Faz o botão ocupar a largura total */
+  font-size: 16px;
+  width: 100%; /* Faz o botão ocupar a largura total da seção de botões */
+}
+h2, h3, p {
+  font-size: 1.0em; /* Reduz o tamanho das letras */
+}
