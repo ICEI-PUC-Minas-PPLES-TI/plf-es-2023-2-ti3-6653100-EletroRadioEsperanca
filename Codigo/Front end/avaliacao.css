@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #38d39f;
+    background: #03A559;
 }
 
 /*ESPAÇO DO FORMULÁRIO*/
@@ -268,7 +268,7 @@ body {
     width: 100%;
     margin-top: 1px;
     border: none;
-    background-color: #38d39f;
+    background-color: #03A559;
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
