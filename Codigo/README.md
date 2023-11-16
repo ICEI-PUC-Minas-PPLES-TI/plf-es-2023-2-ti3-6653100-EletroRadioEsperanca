@@ -1,3 +1,3 @@
-# Código do Projeto
+# shopping-cart-stripe
 
-Mantenha neste diretório todo o código do projeto. Se necessário, descreva neste arquivo aspectos relevantes da estrutura de diretórios criada para organização do código.
+Sistema simples, criado apenas para fazer um carrinho de compras com checkout com Stripe para pagamentos onlines.
