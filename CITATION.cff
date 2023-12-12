@@ -2,30 +2,32 @@ cff-version: 1.0.1
 message: Please cite this software using these metadata.
 title: 
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Felipe Lopes Ferreira
+    given-names: Arthur
+  - family-names: Oliveira Silveira
+    given-names: Beatriz
+  - family-names: Viana Fernandes
+    given-names: Douglas
+  - family-names: Moura Thomaz Neto
+    given-names: Joaquim
+  - family-names: Chrispim Santana
+    given-names: Maria Eduarda
+  - family-names: Pereira
+    given-names: Matheus
+  - family-names: Ye Miao 
+    given-names: Vitoria
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Alonso Veloso
+    given-names: Eveline
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Amaral Baroni de Carvalho
+    given-names: Juliana
 keywords:
-  - 
-  - 
-repository-code: 
+  - Compra de Eletrodomestico
+  - Eletrônico
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti3-6653100-EletroRadioEsperanca.git
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2022-07-14
