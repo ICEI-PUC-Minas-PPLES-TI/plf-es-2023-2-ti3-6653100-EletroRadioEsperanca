@@ -32,23 +32,39 @@ if (isset($_POST['submit'])) {
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background-color: #12a15f;
             background-image: white;
         }
 
         .box {
-            color: white;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 15px;
-            border-radius: 15px;
-            width: 20%;
-        }
+    position: relative;
+    z-index: 2; /* Z-index maior para a caixa, garantindo que fique acima da imagem */
+    color: black; /* Garante que o texto seja visível */
+    background-color: white; /* Adiciona um fundo branco */
+    padding: 15px;
+    border-radius: 15px;
+    width: 40%;
+    margin: auto; /* Centraliza a caixa horizontalmente */
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../assets/img/eletroEsperanca.png');
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Opacidade para a imagem de fundo */
+    z-index: -1; /* Coloca a imagem de fundo abaixo do conteúdo */
+    border-radius: 15px;
+}
 
         fieldset {
-            border: 3px solid green;
+            border: none;
         }
 
         legend {
@@ -67,9 +83,9 @@ if (isset($_POST['submit'])) {
         .inputUser {
             background: none;
             border: none;
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid black;
             outline: none;
-            color: white;
+            color: black;
             font-size: 15px;
             width: 100%;
             letter-spacing: 2px;
@@ -113,17 +129,32 @@ if (isset($_POST['submit'])) {
             background-image: green;
         }
         .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Define a ordem de empilhamento para a imagem estar abaixo */
+    pointer-events: none; /* Garante que a imagem não seja clicável */
+    opacity: 0.5; /* Opacidade para a imagem ficar mais sutil */
+}
+
+
+.logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+
+
+
+
     </style>
 </head>
 
 <body>
-    <a href="../index.php" class="logo">
-        <img src="../assets/img/Eletro Radio - logo menor.jpg" alt="Logo" style="height: 90px;">
-        <!-- Ajuste o 'src' e 'height' conforme necessário -->
+    <a href="" class="logo">
+        <img src="../assets/img/eletroEsperanca.png" alt="Logo" style="pointer-events: none;">
     </a>
     <div class="box">
         <form action="formulario.php" method="POST">
